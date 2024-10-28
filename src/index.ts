@@ -1,0 +1,1 @@
+export { TamaguiButton } from "./TamaguiButton";
