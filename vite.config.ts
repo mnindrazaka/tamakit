@@ -2,7 +2,6 @@ import react from "@vitejs/plugin-react-swc";
 import { tamaguiPlugin } from "@tamagui/vite-plugin";
 import { defineConfig } from "vite";
 import path from "path";
-import dts from "vite-plugin-dts";
 
 export default defineConfig({
   build: {
@@ -18,9 +17,6 @@ export default defineConfig({
       components: ["tamagui"],
       // turns on the optimizing compiler
       optimize: true,
-    }),
-    dts({
-      insertTypesEntry: true,
     }),
   ],
 });
