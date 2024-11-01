@@ -1,1 +1,1 @@
-export { TamaguiButton } from "./TamaguiButton";
+export { TamaguiButton } from "./Hero";
