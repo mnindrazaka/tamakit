@@ -21,17 +21,9 @@ export const HeroWithImageBackground = (
   return (
     <XStack
       position="relative"
-      $sm={{
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "stretch",
-        gap: "$5",
-      }}
-      gap="$10"
-      justifyContent="space-between"
-      alignItems="center"
-      paddingHorizontal="$10"
-      paddingVertical="$15"
+      $sm={{ padding: "$5" }}
+      $md={{ padding: "$10" }}
+      padding="$12"
     >
       <YStack
         $sm={{ maxWidth: "100%" }}
@@ -40,9 +32,9 @@ export const HeroWithImageBackground = (
         maxWidth={480}
         theme="dark"
       >
-        <H1>{props.title}</H1>
+        <H1 $sm={{ size: "$9" }}>{props.title}</H1>
         <Paragraph size="$6">{props.subtitle}</Paragraph>
-        <XStack gap="$3">
+        <XStack gap="$3" $sm={{ flexDirection: "column" }}>
           <Button theme="blue" size="$5" onPress={props.primaryButton.onPress}>
             {props.primaryButton.label}
           </Button>

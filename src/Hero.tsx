@@ -34,9 +34,9 @@ export const Hero = (props: HeroProps) => {
         gap="$5"
         maxWidth={480}
       >
-        <H1>{props.title}</H1>
+        <H1 $sm={{ size: "$9" }}>{props.title}</H1>
         <Paragraph size="$6">{props.subtitle}</Paragraph>
-        <XStack gap="$3">
+        <XStack gap="$3" $sm={{ flexDirection: "column" }}>
           <Button theme="blue" size="$5" onPress={props.primaryButton.onPress}>
             {props.primaryButton.label}
           </Button>

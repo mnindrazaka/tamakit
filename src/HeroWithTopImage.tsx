@@ -25,13 +25,18 @@ export const HeroWithTopImage = (props: HeroWithTopImageProps) => {
         defaultSource={{ uri: props.imageSource }}
         source={{ uri: props.imageSource }}
       />
-      <XStack padding="$6" justifyContent="center">
-        <H1 flex={1} maxWidth={480}>
+      <XStack
+        padding="$6"
+        justifyContent="center"
+        gap="$5"
+        $sm={{ flexDirection: "column", padding: "$3" }}
+      >
+        <H1 flex={1} maxWidth={480} $sm={{ size: "$9" }}>
           {props.title}
         </H1>
         <YStack flex={1} maxWidth={480} gap="$5">
           <Paragraph size="$6">{props.subtitle}</Paragraph>
-          <XStack gap="$5">
+          <XStack gap="$5" $sm={{ flexDirection: "column" }}>
             <Button
               theme="blue"
               size="$5"
