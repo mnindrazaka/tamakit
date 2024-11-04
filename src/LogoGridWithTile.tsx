@@ -27,6 +27,7 @@ export const LogoGridWithTile = (props: LogoGridWithTileProps) => {
             borderRadius="$5"
           >
             <Image
+              resizeMode="contain"
               aspectRatio={16 / 9}
               width="100%"
               height="100%"

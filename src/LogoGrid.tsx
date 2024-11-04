@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, H2, H3, Image, XStack, YStack } from "tamagui";
+import { H3, Image, XStack, YStack } from "tamagui";
 
 export type LogoGridProps = {
   title: string;
@@ -21,9 +21,10 @@ export const LogoGrid = (props: LogoGridProps) => {
             flexBasis="23%"
             $md={{ flexBasis: "33%", padding: "$3" }}
             $sm={{ flexBasis: "48%", padding: "$3" }}
-            padding="$12"
+            padding="$8"
           >
             <Image
+              resizeMode="contain"
               aspectRatio={16 / 9}
               width="100%"
               height="100%"
