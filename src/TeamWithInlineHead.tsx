@@ -1,6 +1,7 @@
 import { Github, Globe, Linkedin } from "@tamagui/lucide-icons";
 import React from "react";
-import { Anchor, Avatar, H1, H5, Paragraph, XStack, YStack } from "tamagui";
+import { Anchor, Avatar, H5, Paragraph, XStack, YStack } from "tamagui";
+import { PageHeader } from "./PageHeader";
 
 export type TeamWithInlineHeadProps = {
   title: string;
@@ -21,8 +22,7 @@ export const TeamWithInlineHead = (props: TeamWithInlineHeadProps) => {
   return (
     <XStack gap="$5" $md={{ flexDirection: "column" }}>
       <YStack maxWidth={480} gap="$3">
-        <H1>{props.title}</H1>
-        <Paragraph size="$6">{props.subtitle}</Paragraph>
+        <PageHeader title={props.title} subtitle={props.subtitle} />
       </YStack>
 
       <XStack gap="$8" flexWrap="wrap">

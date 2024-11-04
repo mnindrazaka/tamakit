@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, H1, H4, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Button, H4, Image, Paragraph, XStack, YStack } from "tamagui";
 import { ArrowRight } from "@tamagui/lucide-icons";
+import { PageHeader } from "./PageHeader";
 
 export type FeaturesProps = {
   title: string;
@@ -16,9 +17,8 @@ export type FeaturesProps = {
 export const Features = (props: FeaturesProps) => {
   return (
     <YStack gap="$8">
-      <YStack maxWidth={720} gap="$5">
-        <H1>{props.title}</H1>
-        <Paragraph size="$6">{props.subtitle}</Paragraph>
+      <YStack maxWidth={640}>
+        <PageHeader title={props.title} subtitle={props.subtitle} />
       </YStack>
 
       <XStack gap="$8" flexWrap="wrap">

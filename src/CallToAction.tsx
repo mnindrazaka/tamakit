@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, H1, Paragraph, XStack, YStack } from "tamagui";
+import { Button, XStack, YStack } from "tamagui";
+import { PageHeader } from "./PageHeader";
 
 export type CallToActionProps = {
   title: string;
@@ -28,9 +29,8 @@ export const CallToAction = (props: CallToActionProps) => {
         alignItems: "flex-start",
       }}
     >
-      <YStack maxWidth={640} gap="$3">
-        <H1>{props.title}</H1>
-        <Paragraph size="$6">{props.subtitle}</Paragraph>
+      <YStack maxWidth={640}>
+        <PageHeader title={props.title} subtitle={props.subtitle} />
       </YStack>
       <XStack
         gap="$3"
@@ -39,11 +39,11 @@ export const CallToAction = (props: CallToActionProps) => {
           alignSelf: "stretch",
         }}
       >
-        <Button onPress={props.secondaryButton.onPress}>
+        <Button onPress={props.secondaryButton.onPress} size="$5">
           {props.secondaryButton.label}
         </Button>
-        <Button theme="blue" onPress={props.secondaryButton.onPress}>
-          {props.secondaryButton.label}
+        <Button theme="blue" onPress={props.primaryButton.onPress} size="$5">
+          {props.primaryButton.label}
         </Button>
       </XStack>
     </XStack>

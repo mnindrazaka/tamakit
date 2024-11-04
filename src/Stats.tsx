@@ -1,5 +1,6 @@
 import React from "react";
-import { H1, Paragraph, XStack, YStack } from "tamagui";
+import { Paragraph, XStack, YStack } from "tamagui";
+import { PageHeader } from "./PageHeader";
 
 export type StatsProps = {
   title: string;
@@ -13,11 +14,12 @@ export type StatsProps = {
 export const Stats = (props: StatsProps) => {
   return (
     <YStack gap="$5" alignItems="center">
-      <YStack gap="$5" maxWidth={640}>
-        <H1 textAlign="center">{props.title}</H1>
-        <Paragraph size="$5" textAlign="center">
-          {props.subtitle}
-        </Paragraph>
+      <YStack maxWidth={640}>
+        <PageHeader
+          title={props.title}
+          subtitle={props.subtitle}
+          align="center"
+        />
       </YStack>
 
       <XStack gap="$10" $sm={{ flexDirection: "column" }}>

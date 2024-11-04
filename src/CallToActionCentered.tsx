@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, H1, Paragraph, XStack, YStack } from "tamagui";
+import { YStack } from "tamagui";
+import { PageHeader } from "./PageHeader";
 
 export type CallToActionCenteredProps = {
   title: string;
@@ -22,27 +23,17 @@ export const CallToActionCentered = (props: CallToActionCenteredProps) => {
       justifyContent="center"
       alignItems="center"
       gap="$5"
+      $sm={{ padding: "$5" }}
     >
       <YStack maxWidth={640} gap="$5">
-        <H1 textAlign="center">{props.title}</H1>
-        <Paragraph size="$6" textAlign="center">
-          {props.subtitle}
-        </Paragraph>
+        <PageHeader
+          title={props.title}
+          subtitle={props.subtitle}
+          align="center"
+          primaryButton={props.primaryButton}
+          secondaryButton={props.secondaryButton}
+        />
       </YStack>
-      <XStack
-        gap="$3"
-        $sm={{
-          flexDirection: "column",
-          alignSelf: "stretch",
-        }}
-      >
-        <Button onPress={props.secondaryButton.onPress}>
-          {props.secondaryButton.label}
-        </Button>
-        <Button theme="blue" onPress={props.secondaryButton.onPress}>
-          {props.secondaryButton.label}
-        </Button>
-      </XStack>
     </YStack>
   );
 };

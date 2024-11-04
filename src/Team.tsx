@@ -1,6 +1,7 @@
 import { Github, Globe, Linkedin } from "@tamagui/lucide-icons";
 import React from "react";
-import { Anchor, Avatar, H1, H5, Paragraph, XStack, YStack } from "tamagui";
+import { Anchor, Avatar, H5, Paragraph, XStack, YStack } from "tamagui";
+import { PageHeader } from "./PageHeader";
 
 export type TeamProps = {
   title: string;
@@ -21,10 +22,11 @@ export const Team = (props: TeamProps) => {
   return (
     <YStack alignItems="center" gap="$5">
       <YStack maxWidth={640} gap="$3">
-        <H1 textAlign="center">{props.title}</H1>
-        <Paragraph size="$6" textAlign="center">
-          {props.subtitle}
-        </Paragraph>
+        <PageHeader
+          title={props.title}
+          subtitle={props.subtitle}
+          align="center"
+        />
       </YStack>
 
       <XStack gap="$8" flexWrap="wrap">

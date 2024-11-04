@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, H1, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Image, XStack, YStack } from "tamagui";
+import { PageHeader } from "./PageHeader";
 
 export type HeroWithImageBackgroundProps = {
   title: string;
@@ -32,16 +33,12 @@ export const HeroWithImageBackground = (
         maxWidth={480}
         theme="dark"
       >
-        <H1 $sm={{ size: "$9" }}>{props.title}</H1>
-        <Paragraph size="$6">{props.subtitle}</Paragraph>
-        <XStack gap="$3" $sm={{ flexDirection: "column" }}>
-          <Button theme="blue" size="$5" onPress={props.primaryButton.onPress}>
-            {props.primaryButton.label}
-          </Button>
-          <Button size="$5" onPress={props.secondaryButton.onPress}>
-            {props.secondaryButton.label}
-          </Button>
-        </XStack>
+        <PageHeader
+          title={props.title}
+          subtitle={props.subtitle}
+          primaryButton={props.primaryButton}
+          secondaryButton={props.secondaryButton}
+        />
       </YStack>
       <YStack
         flex={1}
