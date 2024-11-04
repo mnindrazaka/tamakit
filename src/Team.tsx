@@ -1,5 +1,6 @@
+import { Github, Globe, Linkedin } from "@tamagui/lucide-icons";
 import React from "react";
-import { Avatar, H1, H4, H5, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Anchor, Avatar, H1, H5, Paragraph, XStack, YStack } from "tamagui";
 
 export type TeamProps = {
   title: string;
@@ -11,7 +12,7 @@ export type TeamProps = {
     socialMediaLink: {
       github?: string;
       linkedin?: string;
-      twitter?: string;
+      web?: string;
     };
   }[];
 };
@@ -46,6 +47,25 @@ export const Team = (props: TeamProps) => {
                 {member.role}
               </Paragraph>
             </YStack>
+            <XStack gap="$3">
+              {member.socialMediaLink.github && (
+                <Anchor href={member.socialMediaLink.github}>
+                  <Github size="$1" />
+                </Anchor>
+              )}
+
+              {member.socialMediaLink.linkedin && (
+                <Anchor href={member.socialMediaLink.linkedin}>
+                  <Linkedin size="$1" />
+                </Anchor>
+              )}
+
+              {member.socialMediaLink.web && (
+                <Anchor href={member.socialMediaLink.web}>
+                  <Globe size="$1" />
+                </Anchor>
+              )}
+            </XStack>
           </YStack>
         ))}
       </XStack>
