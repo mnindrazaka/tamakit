@@ -22,7 +22,8 @@ export const Default: Story = {
         content:
           '"As a lead developer at ABC Inc, I have had the opportunity to work with Chakra UI on multiple projects. I can confidently say that it is one of the best UI libraries I have ever used."',
         logoImageSource: "https://img.logoipsum.com/332.svg",
-        profileImageSource: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+        profileImageSource:
+          "https://images.unsplash.com/photo-1527082395-e939b847da0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRldmVsb3BlciUyMHdpdGglMjBiZWFyZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60",
       },
       {
         name: "Sarah Johnson",
