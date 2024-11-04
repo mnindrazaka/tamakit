@@ -22,7 +22,7 @@ export const Team = (props: TeamProps) => {
     <YStack alignItems="center" gap="$5">
       <YStack maxWidth={640} gap="$3">
         <H1 textAlign="center">{props.title}</H1>
-        <Paragraph size="$5" textAlign="center">
+        <Paragraph size="$6" textAlign="center">
           {props.subtitle}
         </Paragraph>
       </YStack>
