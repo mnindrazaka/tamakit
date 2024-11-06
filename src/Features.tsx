@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, H4, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Anchor, Button, H4, Image, Paragraph, XStack, YStack } from "tamagui";
 import { ArrowRight } from "@tamagui/lucide-icons";
 import { PageHeader } from "./PageHeader";
 
@@ -46,14 +46,17 @@ export const Features = (props: FeaturesProps) => {
                 <H4>{item.title}</H4>
                 <Paragraph>{item.subtitle}</Paragraph>
               </YStack>
-              <Button
-                variant="outlined"
-                iconAfter={ArrowRight}
+              <XStack
+                alignItems="center"
                 onPress={item.onPress}
-                theme="blue"
+                gap="$3"
+                cursor="pointer"
               >
-                Read More
-              </Button>
+                <Anchor theme="blue" textDecorationLine="none">
+                  Read More
+                </Anchor>
+                <ArrowRight size="$1" />
+              </XStack>
             </YStack>
           </YStack>
         ))}
