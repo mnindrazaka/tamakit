@@ -30,7 +30,7 @@ export const Pricing = (props: PricingProps) => {
           align="center"
         />
       </YStack>
-      <XStack gap="$3" $md={{ flexDirection: "column" }}>
+      <XStack gap="$3" flexWrap="wrap">
         {props.items.map((item) => (
           <YStack
             key={item.title}
@@ -40,7 +40,9 @@ export const Pricing = (props: PricingProps) => {
             borderRadius="$6"
             padding="$8"
             gap="$5"
-            $sm={{ padding: "$5" }}
+            flexBasis="32%"
+            $md={{ flexBasis: "48%" }}
+            $xs={{ padding: "$5", flexBasis: "100%" }}
           >
             <YStack gap="$3">
               <Paragraph textAlign="center" size="$5" fontWeight="$6">

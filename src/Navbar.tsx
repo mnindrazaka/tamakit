@@ -15,7 +15,8 @@ export const Navbar = (props: NavbarProps) => {
     <XStack
       justifyContent="space-between"
       alignItems="center"
-      paddingHorizontal="$5"
+      paddingHorizontal="$8"
+      $xs={{ paddingHorizontal: "$5" }}
     >
       <YStack>
         <Image

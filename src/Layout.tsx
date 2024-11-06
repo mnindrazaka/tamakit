@@ -14,12 +14,9 @@ export const Layout = (props: LayoutProps) => {
       <YStack
         alignSelf="center"
         width="100%"
-        maxWidth={1280}
-        $lg={{ maxWidth: 1040 }}
-        $md={{ maxWidth: 820 }}
-        $sm={{ maxWidth: 640 }}
-        $xs={{ maxWidth: 480 }}
-        paddingHorizontal="$5"
+        maxWidth={1440}
+        paddingHorizontal="$8"
+        $xs={{ paddingHorizontal: "$5" }}
       >
         {props.main}
       </YStack>

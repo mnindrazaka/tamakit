@@ -15,7 +15,7 @@ export type FooterProps = {
 
 export const Footer = (props: FooterProps) => {
   return (
-    <YStack padding="$5" gap="$8">
+    <YStack padding="$8" $xs={{ padding: "$5" }} gap="$8">
       <XStack
         justifyContent="space-between"
         gap="$5"
