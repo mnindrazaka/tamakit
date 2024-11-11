@@ -1,8 +1,8 @@
 {
   "name": "tamakit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "UI Kit for Tamagui",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
