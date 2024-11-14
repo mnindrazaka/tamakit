@@ -1,6 +1,6 @@
 {
   "name": "tamakit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "UI Kit for Tamagui",
   "main": "dist/src/index.js",
   "type": "module",
