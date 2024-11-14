@@ -55,7 +55,7 @@ export const Blog = (props: BlogProps) => {
             <XStack gap="$3">
               <Avatar circular size="$5">
                 <Avatar.Image src={item.author.imageSource} />
-                <Avatar.Fallback bc="red" />
+                <Avatar.Fallback backgroundColor="red" />
               </Avatar>
               <YStack>
                 <Paragraph fontWeight="$6">{item.author.name}</Paragraph>

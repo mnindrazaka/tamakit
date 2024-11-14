@@ -37,7 +37,7 @@ export const TeamWithInlineHead = (props: TeamWithInlineHeadProps) => {
           >
             <Avatar circular size="$10">
               <Avatar.Image src={member.imageSource} />
-              <Avatar.Fallback bc="red" />
+              <Avatar.Fallback backgroundColor="red" />
             </Avatar>
             <YStack gap="$3">
               <YStack>

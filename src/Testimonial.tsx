@@ -33,7 +33,7 @@ export const Testimonial = (props: TestimonialProps) => {
           >
             <Avatar circular size="$5">
               <Avatar.Image src={item.profileImageSource} />
-              <Avatar.Fallback bc="red" />
+              <Avatar.Fallback backgroundColor="red" />
             </Avatar>
             <YStack>
               <Paragraph size="$5" fontWeight="$10">

@@ -41,7 +41,7 @@ export const Team = (props: TeamProps) => {
           >
             <Avatar circular size="$10">
               <Avatar.Image src={member.imageSource} />
-              <Avatar.Fallback bc="red" />
+              <Avatar.Fallback backgroundColor="red" />
             </Avatar>
             <YStack>
               <H5 textAlign="center">{member.name}</H5>

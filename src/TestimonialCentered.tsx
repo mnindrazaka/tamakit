@@ -36,7 +36,7 @@ export const TestimonialCentered = (props: TestimonialCenteredProps) => {
           <YStack alignItems="center" gap="$3">
             <Avatar circular size="$5">
               <Avatar.Image src={item.profileImageSource} />
-              <Avatar.Fallback bc="red" />
+              <Avatar.Fallback backgroundColor="red" />
             </Avatar>
             <YStack>
               <Paragraph size="$5" fontWeight="$10" textAlign="center">
