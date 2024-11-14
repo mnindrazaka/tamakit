@@ -1,6 +1,6 @@
 {
   "name": "tamakit",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "UI Kit for Tamagui",
   "main": "dist/src/index.js",
   "type": "module",
@@ -34,11 +34,6 @@
     "vite": "^5.4.10"
   },
   "peerDependencies": {
-    "@tamagui/config": "^1.5.9",
-    "@tamagui/lucide-icons": "^1.5.9",
-    "tamagui": "^1.5.9"
-  },
-  "dependencies": {
     "@tamagui/config": "^1.5.9",
     "@tamagui/lucide-icons": "^1.5.9",
     "tamagui": "^1.5.9"
