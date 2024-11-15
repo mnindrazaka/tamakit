@@ -1,6 +1,6 @@
 {
   "name": "tamakit",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "UI Kit for Tamagui",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -8,6 +8,10 @@
     ".": {
       "require": "./dist/cjs/index.js",
       "import": "./dist/esm/index.js"
+    },
+    "./*": {
+      "require": "./dist/cjs/*.js",
+      "import": "./dist/esm/*.js"
     }
   },
   "type": "module",

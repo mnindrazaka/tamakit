@@ -1,6 +1,6 @@
 import React from "react";
 import { TamaguiProvider } from "tamagui";
-import appConfig from "../tamagui.config";
+import appConfig from "../src/tamagui.config";
 
 const preview: import("@storybook/react").Preview = {
   parameters: {
