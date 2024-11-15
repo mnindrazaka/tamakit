@@ -11,7 +11,7 @@ export default defineConfig({
     react(),
     tamaguiPlugin({
       // points to your tamagui config file
-      config: "tamagui.config.ts",
+      config: "src/tamagui.config.ts",
       // points to any linked packages or node_modules
       // that have tamagui components to optimize
       components: ["tamagui"],
