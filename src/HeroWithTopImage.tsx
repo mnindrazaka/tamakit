@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, H1, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Button, H1, Image, Paragraph, XStack, YStack } from "./ui";
 
 export type HeroWithTopImageProps = {
   title: string;

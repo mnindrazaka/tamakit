@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, H1, Paragraph, XStack, YStack } from "tamagui";
+import { Button, H1, Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 import { Check } from "@tamagui/lucide-icons";
 

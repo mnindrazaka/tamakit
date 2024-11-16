@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react/*";
+import { Meta, StoryObj } from "@storybook/react";
 import { Stats } from "./Stats";
 
 export default { component: Stats } as Meta;

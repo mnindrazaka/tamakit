@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react/*";
+import { Meta, StoryObj } from "@storybook/react";
 import { StatsWithHighlight } from "./StatsWithHighlight";
 
 export default { component: StatsWithHighlight } as Meta;

@@ -1,5 +1,4 @@
-import React from "react";
-import { Avatar, H4, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Avatar, H4, Image, Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
 export type BlogProps = {

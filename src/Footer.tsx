@@ -1,6 +1,5 @@
 import { Github, Linkedin } from "@tamagui/lucide-icons";
-import React from "react";
-import { Anchor, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Image, Paragraph, XStack, YStack } from "./ui";
 
 export type FooterProps = {
   logoImageSource: string;
@@ -42,13 +41,13 @@ export const Footer = (props: FooterProps) => {
             >
               <Paragraph color="$gray10">{link.title}</Paragraph>
               {link.subLinks.map((subLink) => (
-                <Anchor
+                <a
                   key={subLink.title}
                   href={subLink.href}
-                  textDecorationLine="none"
+                  style={{ textDecoration: "none" }}
                 >
                   {subLink.title}
-                </Anchor>
+                </a>
               ))}
             </YStack>
           ))}
@@ -65,15 +64,15 @@ export const Footer = (props: FooterProps) => {
         </Paragraph>
         <XStack gap="$5">
           {props.socialMediaLink?.linkedin && (
-            <Anchor href={props.socialMediaLink.linkedin}>
+            <a href={props.socialMediaLink.linkedin}>
               <Linkedin />
-            </Anchor>
+            </a>
           )}
 
           {props.socialMediaLink?.github && (
-            <Anchor href={props.socialMediaLink.github}>
+            <a href={props.socialMediaLink.linkedin}>
               <Github />
-            </Anchor>
+            </a>
           )}
         </XStack>
       </XStack>

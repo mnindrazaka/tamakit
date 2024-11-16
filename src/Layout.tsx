@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, YStack } from "tamagui";
+import { ScrollView, YStack } from "./ui";
 
 export type LayoutProps = {
   navbar: React.ReactNode;

@@ -1,5 +1,4 @@
-import React from "react";
-import { YStack } from "tamagui";
+import { YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
 export type CallToActionCenteredProps = {

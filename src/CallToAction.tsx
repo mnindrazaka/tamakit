@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, XStack, YStack } from "tamagui";
+import { Button, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
 export type CallToActionProps = {

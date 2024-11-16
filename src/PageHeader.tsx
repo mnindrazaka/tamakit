@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, H1, Paragraph, XStack, YStack } from "tamagui";
+import { Button, H1, Paragraph, XStack, YStack } from "./ui";
 
 export type PageHeaderProps = {
   title: string;

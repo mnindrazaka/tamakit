@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import { Layout } from "./Layout";
-import { Paragraph, YStack } from "tamagui";
+import { Paragraph, YStack } from "./ui";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Hero } from "./Hero";

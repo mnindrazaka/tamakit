@@ -1,5 +1,4 @@
-import React from "react";
-import { Image, XStack, YStack } from "tamagui";
+import { Image, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
 export type HeroProps = {

@@ -1,6 +1,5 @@
 import { Menu } from "@tamagui/lucide-icons";
-import React from "react";
-import { Anchor, Button, Image, Popover, XStack, YStack } from "tamagui";
+import { Button, Image, Popover, XStack, YStack } from "./ui";
 
 export type NavbarProps = {
   logoImageSource: string;
@@ -29,9 +28,13 @@ export const Navbar = (props: NavbarProps) => {
       </YStack>
       <XStack gap="$5" $md={{ display: "none" }}>
         {props.links.map((link) => (
-          <Anchor href={link.href} key={link.title} textDecorationLine="none">
+          <a
+            href={link.href}
+            key={link.title}
+            style={{ textDecoration: "none" }}
+          >
             {link.title}
-          </Anchor>
+          </a>
         ))}
       </XStack>
       <Popover size="$5" allowFlip>
@@ -57,13 +60,13 @@ export const Navbar = (props: NavbarProps) => {
           <Popover.Arrow borderWidth={1} borderColor="$borderColor" />
           <YStack gap="$3" paddingHorizontal="$5">
             {props.links.map((link) => (
-              <Anchor
+              <a
                 href={link.href}
                 key={link.title}
-                textDecorationLine="none"
+                style={{ textDecoration: "none" }}
               >
                 {link.title}
-              </Anchor>
+              </a>
             ))}
           </YStack>
         </Popover.Content>

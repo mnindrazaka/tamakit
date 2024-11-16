@@ -1,5 +1,4 @@
-import React from "react";
-import { H3, Image, XStack, YStack } from "tamagui";
+import { H3, Image, XStack, YStack } from "./ui";
 
 export type LogoGridProps = {
   title: string;

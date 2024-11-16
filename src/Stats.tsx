@@ -1,5 +1,4 @@
-import React from "react";
-import { Paragraph, XStack, YStack } from "tamagui";
+import { Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
 export type StatsProps = {

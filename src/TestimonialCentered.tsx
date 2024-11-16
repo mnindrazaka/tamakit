@@ -1,5 +1,4 @@
-import React from "react";
-import { Avatar, Image, Paragraph, XStack, YStack } from "tamagui";
+import { Avatar, Image, Paragraph, XStack, YStack } from "./ui";
 
 export type TestimonialCenteredProps = {
   items: {

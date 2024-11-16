@@ -1,6 +1,5 @@
 import { Github, Globe, Linkedin } from "@tamagui/lucide-icons";
-import React from "react";
-import { Anchor, Avatar, H5, Paragraph, XStack, YStack } from "tamagui";
+import { Avatar, H5, Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
 export type TeamWithInlineHeadProps = {
@@ -46,21 +45,21 @@ export const TeamWithInlineHead = (props: TeamWithInlineHeadProps) => {
               </YStack>
               <XStack gap="$3">
                 {member.socialMediaLink.github && (
-                  <Anchor href={member.socialMediaLink.github}>
+                  <a href={member.socialMediaLink.github}>
                     <Github size="$1" />
-                  </Anchor>
+                  </a>
                 )}
 
                 {member.socialMediaLink.linkedin && (
-                  <Anchor href={member.socialMediaLink.linkedin}>
+                  <a href={member.socialMediaLink.linkedin}>
                     <Linkedin size="$1" />
-                  </Anchor>
+                  </a>
                 )}
 
                 {member.socialMediaLink.web && (
-                  <Anchor href={member.socialMediaLink.web}>
+                  <a href={member.socialMediaLink.web}>
                     <Globe size="$1" />
-                  </Anchor>
+                  </a>
                 )}
               </XStack>
             </YStack>

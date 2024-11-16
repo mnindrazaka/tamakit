@@ -1,4 +1,4 @@
-import { StoryObj } from "@storybook/react/*";
+import { StoryObj } from "@storybook/react";
 import { HeroWithTopImage } from "./HeroWithTopImage";
 import { fn } from "@storybook/test";
 

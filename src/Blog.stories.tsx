@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react/*";
+import { Meta, StoryObj } from "@storybook/react";
 import { Blog } from "./Blog";
 import { fn } from "@storybook/test";
 
