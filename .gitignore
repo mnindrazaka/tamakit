@@ -2,3 +2,4 @@ node_modules
 .tamagui
 dist
 storybook-static
+types
