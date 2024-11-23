@@ -1,5 +1,5 @@
 import { H4, Image, Paragraph, XStack, YStack } from "./ui";
-import { ArrowRight } from "@tamagui/lucide-icons";
+import Icon from "@tamagui/lucide-icons";
 import { PageHeader } from "./PageHeader";
 
 export type FeaturesProps = {
@@ -54,7 +54,7 @@ export const Features = (props: FeaturesProps) => {
                 <Paragraph theme="blue" textDecorationLine="none">
                   Read More
                 </Paragraph>
-                <ArrowRight size="$1" />
+                <Icon.ArrowRight size="$1" />
               </XStack>
             </YStack>
           </YStack>

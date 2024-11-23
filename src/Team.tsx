@@ -1,4 +1,4 @@
-import { Github, Globe, Linkedin } from "@tamagui/lucide-icons";
+import Icon from "@tamagui/lucide-icons";
 
 import { Avatar, H5, Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
@@ -52,19 +52,19 @@ export const Team = (props: TeamProps) => {
             <XStack gap="$3">
               {member.socialMediaLink.github && (
                 <a href={member.socialMediaLink.github}>
-                  <Github size="$1" />
+                  <Icon.Github size="$1" />
                 </a>
               )}
 
               {member.socialMediaLink.linkedin && (
                 <a href={member.socialMediaLink.linkedin}>
-                  <Linkedin size="$1" />
+                  <Icon.Linkedin size="$1" />
                 </a>
               )}
 
               {member.socialMediaLink.web && (
                 <a href={member.socialMediaLink.web}>
-                  <Globe size="$1" />
+                  <Icon.Globe size="$1" />
                 </a>
               )}
             </XStack>
