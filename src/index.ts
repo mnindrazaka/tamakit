@@ -1,35 +1,20 @@
-export { Blog, BlogProps } from "./Blog";
-export { CallToAction, CallToActionProps } from "./CallToAction";
-export {
-  CallToActionCentered,
-  CallToActionCenteredProps,
-} from "./CallToActionCentered";
-export { Features, FeaturesProps } from "./Features";
-export { Footer, FooterProps } from "./Footer";
-export { Hero, HeroProps } from "./Hero";
-export {
-  HeroWithImageBackground,
-  HeroWithImageBackgroundProps,
-} from "./HeroWithImageBackground";
-export { HeroWithTopImage, HeroWithTopImageProps } from "./HeroWithTopImage";
-export { Layout, LayoutProps } from "./Layout";
-export { LogoGrid, LogoGridProps } from "./LogoGrid";
-export { LogoGridWithTile, LogoGridWithTileProps } from "./LogoGridWithTile";
-export { Navbar, NavbarProps } from "./Navbar";
-export { PageHeader, PageHeaderProps } from "./PageHeader";
-export { Pricing, PricingProps } from "./Pricing";
-export { Stats, StatsProps } from "./Stats";
-export {
-  StatsWithHighlight,
-  StatsWithHighlightProps,
-} from "./StatsWithHighlight";
-export { Team, TeamProps } from "./Team";
-export {
-  TeamWithInlineHead,
-  TeamWithInlineHeadProps,
-} from "./TeamWithInlineHead";
-export { Testimonial, TestimonialProps } from "./Testimonial";
-export {
-  TestimonialCentered,
-  TestimonialCenteredProps,
-} from "./TestimonialCentered";
+export { Blog } from "./Blog";
+export { CallToAction } from "./CallToAction";
+export { CallToActionCentered } from "./CallToActionCentered";
+export { Features } from "./Features";
+export { Footer } from "./Footer";
+export { Hero } from "./Hero";
+export { HeroWithImageBackground } from "./HeroWithImageBackground";
+export { HeroWithTopImage } from "./HeroWithTopImage";
+export { Layout } from "./Layout";
+export { LogoGrid } from "./LogoGrid";
+export { LogoGridWithTile } from "./LogoGridWithTile";
+export { Navbar } from "./Navbar";
+export { PageHeader } from "./PageHeader";
+export { Pricing } from "./Pricing";
+export { Stats } from "./Stats";
+export { StatsWithHighlight } from "./StatsWithHighlight";
+export { Team } from "./Team";
+export { TeamWithInlineHead } from "./TeamWithInlineHead";
+export { Testimonial } from "./Testimonial";
+export { TestimonialCentered } from "./TestimonialCentered";
