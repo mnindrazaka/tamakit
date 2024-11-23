@@ -1,4 +1,4 @@
-// import Icon from "@tamagui/lucide-icons";
+import Icon from "@tamagui/lucide-icons";
 import { Image, Paragraph, XStack, YStack } from "./ui";
 
 export type FooterProps = {
@@ -65,12 +65,14 @@ export const Footer = (props: FooterProps) => {
         <XStack gap="$5">
           {props.socialMediaLink?.linkedin && (
             <a href={props.socialMediaLink.linkedin}>
-              {/* <Icon.Linkedin /> */}
+              <Icon.Linkedin />
             </a>
           )}
 
           {props.socialMediaLink?.github && (
-            <a href={props.socialMediaLink.linkedin}>{/* <Icon.Github /> */}</a>
+            <a href={props.socialMediaLink.linkedin}>
+              <Icon.Github />
+            </a>
           )}
         </XStack>
       </XStack>

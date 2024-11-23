@@ -1,4 +1,4 @@
-// import Icon from "@tamagui/lucide-icons";
+import Icon from "@tamagui/lucide-icons";
 import { Avatar, H5, Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
 
@@ -46,19 +46,19 @@ export const TeamWithInlineHead = (props: TeamWithInlineHeadProps) => {
               <XStack gap="$3">
                 {member.socialMediaLink.github && (
                   <a href={member.socialMediaLink.github}>
-                    {/* <Icon.Github size="$1" /> */}
+                    <Icon.Github size="$1" />
                   </a>
                 )}
 
                 {member.socialMediaLink.linkedin && (
                   <a href={member.socialMediaLink.linkedin}>
-                    {/* <Icon.Linkedin size="$1" /> */}
+                    <Icon.Linkedin size="$1" />
                   </a>
                 )}
 
                 {member.socialMediaLink.web && (
                   <a href={member.socialMediaLink.web}>
-                    {/* <Icon.Globe size="$1" /> */}
+                    <Icon.Globe size="$1" />
                   </a>
                 )}
               </XStack>

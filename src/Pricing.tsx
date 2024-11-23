@@ -1,6 +1,6 @@
 import { Button, H1, Paragraph, XStack, YStack } from "./ui";
 import { PageHeader } from "./PageHeader";
-// import Icon from "@tamagui/lucide-icons";
+import Icon from "@tamagui/lucide-icons";
 
 export type PricingProps = {
   title: string;
@@ -57,7 +57,7 @@ export const Pricing = (props: PricingProps) => {
             <YStack gap="$3">
               {item.features.map((feature) => (
                 <XStack gap="$5" key={feature}>
-                  {/* <Icon.Check color="$blue11" /> */}
+                  <Icon.Check color="$blue11" />
                   <Paragraph size="$5">{feature}</Paragraph>
                 </XStack>
               ))}
