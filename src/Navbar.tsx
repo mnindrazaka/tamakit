@@ -1,4 +1,4 @@
-import Icon from "@tamagui/lucide-icons";
+// import Icon from "@tamagui/lucide-icons";
 import { Button, Image, Popover, XStack, YStack } from "./ui";
 
 export type NavbarProps = {
@@ -39,7 +39,7 @@ export const Navbar = (props: NavbarProps) => {
       </XStack>
       <Popover size="$5" allowFlip>
         <Popover.Trigger asChild>
-          <Button icon={Icon.Menu} $gtMd={{ display: "none" }} />
+          {/* <Button icon={Icon.Menu} $gtMd={{ display: "none" }} /> */}
         </Popover.Trigger>
 
         <Popover.Content
