@@ -1,4 +1,4 @@
-import { Button, H1, Paragraph, XStack, YStack } from "./ui";
+import { Button, H1, Paragraph, XStack, YStack } from "tamagui";
 
 export type PageHeaderProps = {
   title: string;

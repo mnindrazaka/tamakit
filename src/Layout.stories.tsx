@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import { Layout } from "./Layout";
-import { Paragraph, YStack } from "./ui";
+import { Paragraph, YStack } from "tamagui";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Hero } from "./Hero";
@@ -75,7 +75,7 @@ export const LandingPage: Story = {
             {
               title: "210+ Components",
               subtitle:
-                "Chakra UI Pro has 210+ componentsto help you develop your project faster.",
+                "Tamakit components help you develop your project faster.",
               imageSource:
                 "https://img.icons8.com/?size=100&id=24575&format=png&color=000000",
               onPress: fn(),
@@ -83,7 +83,7 @@ export const LandingPage: Story = {
             {
               title: "Production Ready",
               subtitle:
-                "Effortlessly create your next production-ready experience with Chakra UI Pro components.",
+                "Effortlessly create your next production-ready experience with Tamakit components.",
               imageSource:
                 "https://img.icons8.com/?size=100&id=999&format=png&color=000000",
               onPress: fn(),
@@ -318,7 +318,7 @@ export const LandingPage: Story = {
     ),
     footer: (
       <Footer
-        copyrightText="© 2024 Chakra UI Pro, Inc. All rights reserved."
+        copyrightText="© 2024 Tamakit. All rights reserved."
         logoImageSource="https://img.logoipsum.com/330.svg"
         tagline="Create beautiful websites remarkably fast."
         socialMediaLink={{

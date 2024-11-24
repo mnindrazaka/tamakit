@@ -1,19 +1,36 @@
 import React from "react";
 import { TamaguiProvider } from "tamagui";
-import appConfig from "../src/tamagui.config";
+import appConfig from "../tamagui.config";
+
+const colors = {
+  dark: "#141414",
+  light: "#fff",
+};
 
 const preview: import("@storybook/react").Preview = {
+  decorators: [
+    (story, ctx) => {
+      const theme =
+        Object.entries(colors).find(
+          ([_, value]) => value === ctx.globals.backgrounds?.value
+        )?.[0] ?? "light";
+
+      return (
+        <TamaguiProvider config={appConfig} defaultTheme={theme}>
+          {story()}
+        </TamaguiProvider>
+      );
+    },
+  ],
   parameters: {
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
+    backgrounds: {
+      values: Object.entries(colors).map(([name, value]) => ({
+        name,
+        value,
+      })),
+      default: "Light",
     },
   },
-  decorators: [
-    (story) => <TamaguiProvider config={appConfig}>{story()}</TamaguiProvider>,
-  ],
 };
 
 export default preview;

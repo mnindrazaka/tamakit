@@ -1,4 +1,4 @@
-import { H3, Image, XStack, YStack } from "./ui";
+import { H3, Image, XStack, YStack } from "tamagui";
 
 export type LogoGridWithTileProps = {
   title: string;

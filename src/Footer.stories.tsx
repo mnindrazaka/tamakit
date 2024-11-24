@@ -1,5 +1,7 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import { Footer } from "./Footer";
+import { Github, Linkedin } from "@tamagui/lucide-icons";
 
 export default { component: Footer } as Meta;
 
@@ -7,12 +9,18 @@ type Story = StoryObj<typeof Footer>;
 
 export const Default: Story = {
   args: {
-    logoImageSource: "https://img.logoipsum.com/330.svg",
-    copyrightText: "© 2024 Chakra UI Pro, Inc. All rights reserved.",
-    socialMediaLink: {
-      github: "https://github.com/mnindrazaka",
-      linkedin: "https://linkedin.com/in/mnindrazaka",
-    },
+    logoImageSource: "https://img.logoipsum.com/297.svg",
+    copyrightText: "© 2024 Tamakit All rights reserved.",
+    socialMediaLinks: [
+      {
+        href: "https://github.com/mnindrazaka",
+        icon: <Github />,
+      },
+      {
+        href: "https://linkedin.com/in/mnindrazaka",
+        icon: <Linkedin />,
+      },
+    ],
     tagline: "Create beautiful websites remarkably fast.",
     links: [
       {

@@ -1,5 +1,4 @@
-import { H4, Image, Paragraph, XStack, YStack } from "./ui";
-import Icon from "@tamagui/lucide-icons";
+import { H4, Image, Paragraph, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type FeaturesProps = {
@@ -37,7 +36,7 @@ export const Features = (props: FeaturesProps) => {
             >
               <Image
                 aspectRatio={1 / 1}
-                width={64}
+                width={248}
                 defaultSource={{ uri: item.imageSource }}
                 source={{ uri: item.imageSource }}
               />
@@ -54,7 +53,6 @@ export const Features = (props: FeaturesProps) => {
                 <Paragraph theme="blue" textDecorationLine="none">
                   Read More
                 </Paragraph>
-                <Icon.ArrowRight size="$1" />
               </XStack>
             </YStack>
           </YStack>

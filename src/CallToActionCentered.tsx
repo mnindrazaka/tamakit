@@ -1,4 +1,4 @@
-import { YStack } from "./ui";
+import { YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type CallToActionCenteredProps = {

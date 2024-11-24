@@ -1,6 +1,6 @@
-import Icon from "@tamagui/lucide-icons";
-import { Avatar, H5, Paragraph, XStack, YStack } from "./ui";
+import { Avatar, H5, Paragraph, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
+import { ReactNode } from "react";
 
 export type TeamWithInlineHeadProps = {
   title: string;
@@ -9,11 +9,10 @@ export type TeamWithInlineHeadProps = {
     name: string;
     role: string;
     imageSource: string;
-    socialMediaLink: {
-      github?: string;
-      linkedin?: string;
-      web?: string;
-    };
+    socialMediaLinks: {
+      href: string;
+      icon: ReactNode;
+    }[];
   }[];
 };
 
@@ -44,23 +43,11 @@ export const TeamWithInlineHead = (props: TeamWithInlineHeadProps) => {
                 <Paragraph color="$blue11">{member.role}</Paragraph>
               </YStack>
               <XStack gap="$3">
-                {member.socialMediaLink.github && (
-                  <a href={member.socialMediaLink.github}>
-                    <Icon.Github size="$1" />
+                {member.socialMediaLinks.map(({ href, icon }) => (
+                  <a key={href} href={href}>
+                    {icon}
                   </a>
-                )}
-
-                {member.socialMediaLink.linkedin && (
-                  <a href={member.socialMediaLink.linkedin}>
-                    <Icon.Linkedin size="$1" />
-                  </a>
-                )}
-
-                {member.socialMediaLink.web && (
-                  <a href={member.socialMediaLink.web}>
-                    <Icon.Globe size="$1" />
-                  </a>
-                )}
+                ))}
               </XStack>
             </YStack>
           </XStack>

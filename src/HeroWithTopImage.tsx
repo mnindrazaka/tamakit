@@ -1,4 +1,4 @@
-import { Button, H1, Image, Paragraph, XStack, YStack } from "./ui";
+import { Button, H1, Image, Paragraph, XStack, YStack } from "tamagui";
 
 export type HeroWithTopImageProps = {
   title: string;

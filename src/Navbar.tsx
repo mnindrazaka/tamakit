@@ -1,5 +1,12 @@
-import Icon from "@tamagui/lucide-icons";
-import { Button, Image, Popover, XStack, YStack } from "./ui";
+import {
+  Button,
+  ButtonProps,
+  Image,
+  Paragraph,
+  Popover,
+  XStack,
+  YStack,
+} from "tamagui";
 
 export type NavbarProps = {
   logoImageSource: string;
@@ -7,6 +14,7 @@ export type NavbarProps = {
     title: string;
     href: string;
   }[];
+  mobileMenuIcon: ButtonProps["icon"];
 };
 
 export const Navbar = (props: NavbarProps) => {
@@ -33,13 +41,13 @@ export const Navbar = (props: NavbarProps) => {
             key={link.title}
             style={{ textDecoration: "none" }}
           >
-            {link.title}
+            <Paragraph>{link.title}</Paragraph>
           </a>
         ))}
       </XStack>
       <Popover size="$5" allowFlip>
         <Popover.Trigger asChild>
-          <Button icon={Icon.Menu} $gtMd={{ display: "none" }} />
+          <Button icon={props.mobileMenuIcon} $gtMd={{ display: "none" }} />
         </Popover.Trigger>
 
         <Popover.Content
@@ -65,7 +73,7 @@ export const Navbar = (props: NavbarProps) => {
                 key={link.title}
                 style={{ textDecoration: "none" }}
               >
-                {link.title}
+                <Paragraph>{link.title}</Paragraph>
               </a>
             ))}
           </YStack>

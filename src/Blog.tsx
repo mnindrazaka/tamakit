@@ -1,4 +1,4 @@
-import { Avatar, H4, Image, Paragraph, XStack, YStack } from "./ui";
+import { Avatar, H4, Image, Paragraph, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type BlogProps = {
@@ -58,7 +58,7 @@ export const Blog = (props: BlogProps) => {
               </Avatar>
               <YStack>
                 <Paragraph fontWeight="$6">{item.author.name}</Paragraph>
-                <Paragraph color="$gray10">{item.publishedAt}</Paragraph>
+                <Paragraph color="$gray11">{item.publishedAt}</Paragraph>
               </YStack>
             </XStack>
           </YStack>

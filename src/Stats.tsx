@@ -1,4 +1,4 @@
-import { Paragraph, XStack, YStack } from "./ui";
+import { Paragraph, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type StatsProps = {

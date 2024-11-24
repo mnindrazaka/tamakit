@@ -1,4 +1,4 @@
-import { Image, XStack, YStack } from "./ui";
+import { Image, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type HeroWithImageBackgroundProps = {

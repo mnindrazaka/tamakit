@@ -1,14 +1,13 @@
-import Icon from "@tamagui/lucide-icons";
-import { Image, Paragraph, XStack, YStack } from "./ui";
+import { Image, Paragraph, XStack, YStack } from "tamagui";
 
 export type FooterProps = {
   logoImageSource: string;
   tagline: string;
   copyrightText: string;
-  socialMediaLink?: {
-    github?: string;
-    linkedin?: string;
-  };
+  socialMediaLinks?: {
+    icon: React.ReactNode;
+    href: string;
+  }[];
   links: { title: string; subLinks: { title: string; href: string }[] }[];
 };
 
@@ -46,7 +45,7 @@ export const Footer = (props: FooterProps) => {
                   href={subLink.href}
                   style={{ textDecoration: "none" }}
                 >
-                  {subLink.title}
+                  <Paragraph>{subLink.title}</Paragraph>
                 </a>
               ))}
             </YStack>
@@ -63,17 +62,11 @@ export const Footer = (props: FooterProps) => {
           {props.copyrightText}
         </Paragraph>
         <XStack gap="$5">
-          {props.socialMediaLink?.linkedin && (
-            <a href={props.socialMediaLink.linkedin}>
-              <Icon.Linkedin />
+          {props.socialMediaLinks?.map(({ href, icon }) => (
+            <a key={href} href={href}>
+              {icon}
             </a>
-          )}
-
-          {props.socialMediaLink?.github && (
-            <a href={props.socialMediaLink.linkedin}>
-              <Icon.Github />
-            </a>
-          )}
+          ))}
         </XStack>
       </XStack>
     </YStack>

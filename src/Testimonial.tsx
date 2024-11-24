@@ -1,4 +1,4 @@
-import { Avatar, Image, Paragraph, XStack, YStack } from "./ui";
+import { Avatar, Image, Paragraph, XStack, YStack } from "tamagui";
 
 export type TestimonialProps = {
   items: {
