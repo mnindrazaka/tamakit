@@ -13,7 +13,7 @@ export { Navbar } from "./Navbar";
 export { PageHeader } from "./PageHeader";
 export { Pricing } from "./Pricing";
 export { Stats } from "./Stats";
-export { StatsWithHighlight } from "./StatsWithAccent";
+export { StatsWithAccent } from "./StatsWithAccent";
 export { Team } from "./Team";
 export { TeamWithInlineHead } from "./TeamWithInlineHead";
 export { Testimonial } from "./Testimonial";
