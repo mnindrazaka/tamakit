@@ -3,11 +3,11 @@ import { Button, H1, Image, Paragraph, XStack, YStack } from "tamagui";
 export type HeroWithTopImageProps = {
   title: string;
   subtitle: string;
-  primaryButton: {
+  primaryButton?: {
     label: string;
     onPress: () => void;
   };
-  secondaryButton: {
+  secondaryButton?: {
     label: string;
     onPress: () => void;
   };
@@ -36,16 +36,20 @@ export const HeroWithTopImage = (props: HeroWithTopImageProps) => {
         <YStack flex={1} maxWidth={480} gap="$5">
           <Paragraph size="$6">{props.subtitle}</Paragraph>
           <XStack gap="$5" $sm={{ flexDirection: "column" }}>
-            <Button
-              theme="active"
-              size="$5"
-              onPress={props.primaryButton.onPress}
-            >
-              {props.primaryButton.label}
-            </Button>
-            <Button size="$5" onPress={props.secondaryButton.onPress}>
-              {props.secondaryButton.label}
-            </Button>
+            {props.primaryButton && (
+              <Button
+                theme="active"
+                size="$5"
+                onPress={props.primaryButton.onPress}
+              >
+                {props.primaryButton.label}
+              </Button>
+            )}
+            {props.secondaryButton && (
+              <Button size="$5" onPress={props.secondaryButton.onPress}>
+                {props.secondaryButton.label}
+              </Button>
+            )}
           </XStack>
         </YStack>
       </XStack>

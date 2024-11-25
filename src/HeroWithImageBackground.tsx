@@ -4,11 +4,11 @@ import { PageHeader } from "./PageHeader";
 export type HeroWithImageBackgroundProps = {
   title: string;
   subtitle: string;
-  primaryButton: {
+  primaryButton?: {
     label: string;
     onPress: () => void;
   };
-  secondaryButton: {
+  secondaryButton?: {
     label: string;
     onPress: () => void;
   };
