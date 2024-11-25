@@ -18,3 +18,4 @@ export { Team } from "./Team";
 export { TeamWithInlineHead } from "./TeamWithInlineHead";
 export { Testimonial } from "./Testimonial";
 export { TestimonialCentered } from "./TestimonialCentered";
+export { Portfolio } from "./Portfolio";
