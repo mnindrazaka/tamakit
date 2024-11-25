@@ -5,6 +5,14 @@ export type BlogProps = {
   title: string;
   subtitle: string;
   tag?: string;
+  primaryButton?: {
+    label: string;
+    onPress: () => void;
+  };
+  secondaryButton?: {
+    label: string;
+    onPress: () => void;
+  };
   items: {
     imageSource: string;
     title: string;
@@ -26,6 +34,8 @@ export const Blog = (props: BlogProps) => {
         tag={props.tag}
         title={props.title}
         subtitle={props.subtitle}
+        primaryButton={props.primaryButton}
+        secondaryButton={props.secondaryButton}
       />
       <XStack flexWrap="wrap" gap="$8">
         {props.items.map((item) => (
