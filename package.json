@@ -1,6 +1,6 @@
 {
   "name": "tamakit",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "UI Kit for Tamagui",
   "source": "src/index.tsx",
   "types": "./types/index.d.ts",
