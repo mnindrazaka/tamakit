@@ -16,42 +16,36 @@ export const Default: Story = {
         title: "210+ Components",
         subtitle: "Tamakit components help you develop your project faster.",
         imageSource: "https://i.ibb.co.com/dJGfDBb/image.png",
-        onPress: fn(),
       },
       {
         title: "Production Ready",
         subtitle:
           "Effortlessly create your next production-ready experience with Tamakit components.",
         imageSource: "https://i.ibb.co.com/0Z3Fr7Q/image.png",
-        onPress: fn(),
       },
       {
         title: "Light & Dark",
         subtitle:
           "All components support a light and a dark color mode out of the box.",
         imageSource: "https://i.ibb.co.com/QkLB5Rf/image.png",
-        onPress: fn(),
       },
       {
         title: "Themeable",
         subtitle:
           "Your style. Your brand. Customize the components as you need them. It's that simple.",
         imageSource: "https://i.ibb.co.com/fFdP4hG/image.png",
-        onPress: fn(),
       },
       {
         title: "Fully Responsive",
         subtitle:
           "Responsive components that look great on mobile, tablet and desktop.",
         imageSource: "https://i.ibb.co.com/ts45HVh/image.png",
-        onPress: fn(),
       },
       {
         title: "Accessible",
         subtitle:
           "Accessibility first. That's why we pay attention to accessibility right from the start.",
         imageSource: "https://i.ibb.co.com/VxFpRfL/image.png",
-        onPress: fn(),
       },
     ],
   },

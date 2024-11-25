@@ -8,7 +8,6 @@ export type FeaturesProps = {
     imageSource: string;
     title: string;
     subtitle: string;
-    onPress: () => void;
   }[];
 };
 
@@ -44,16 +43,6 @@ export const Features = (props: FeaturesProps) => {
                 <H4>{item.title}</H4>
                 <Paragraph>{item.subtitle}</Paragraph>
               </YStack>
-              <XStack
-                alignItems="center"
-                onPress={item.onPress}
-                gap="$3"
-                cursor="pointer"
-              >
-                <Paragraph theme="blue" textDecorationLine="none">
-                  Read More
-                </Paragraph>
-              </XStack>
             </YStack>
           </YStack>
         ))}
