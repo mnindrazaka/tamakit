@@ -13,6 +13,7 @@ import { Team } from "./Team";
 import { Pricing } from "./Pricing";
 import { CallToAction } from "./CallToAction";
 import { Github, Linkedin, Menu } from "@tamagui/lucide-icons";
+import { Portfolio } from "./Portfolio";
 
 export default {
   component: Layout,
@@ -79,42 +80,36 @@ export const LandingPage: Story = {
               subtitle:
                 "Tamakit components help you develop your project faster.",
               imageSource: "https://i.ibb.co.com/dJGfDBb/image.png",
-              onPress: fn(),
             },
             {
               title: "Production Ready",
               subtitle:
                 "Effortlessly create your next production-ready experience with Tamakit components.",
               imageSource: "https://i.ibb.co.com/0Z3Fr7Q/image.png",
-              onPress: fn(),
             },
             {
               title: "Light & Dark",
               subtitle:
                 "All components support a light and a dark color mode out of the box.",
               imageSource: "https://i.ibb.co.com/QkLB5Rf/image.png",
-              onPress: fn(),
             },
             {
               title: "Themeable",
               subtitle:
                 "Your style. Your brand. Customize the components as you need them. It's that simple.",
               imageSource: "https://i.ibb.co.com/fFdP4hG/image.png",
-              onPress: fn(),
             },
             {
               title: "Fully Responsive",
               subtitle:
                 "Responsive components that look great on mobile, tablet and desktop.",
               imageSource: "https://i.ibb.co.com/ts45HVh/image.png",
-              onPress: fn(),
             },
             {
               title: "Accessible",
               subtitle:
                 "Accessibility first. That's why we pay attention to accessibility right from the start.",
               imageSource: "https://i.ibb.co.com/VxFpRfL/image.png",
-              onPress: fn(),
             },
           ]}
         />
@@ -161,6 +156,37 @@ export const LandingPage: Story = {
             {
               imageSource: "https://img.logoipsum.com/296.svg",
               href: "#",
+            },
+          ]}
+        />
+        <Portfolio
+          title="Featured Portfolio"
+          subtitle="Ice cream pudding dragée macaroon donut marzipan chocolate"
+          tag="Our Portfolio"
+          items={[
+            {
+              title: "2022 Developer Survey",
+              content:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique ex in pretium lobortis. Nam posuere volutpat leo at ullamcorper. Praesent id mattis justo, nec dictum nisl. Ut semper ut nunc vel semper. Etiam pellentesque enim eget lectus sodales eleifend. Etiam a semper justo, non aliquet augue.",
+              imageSource:
+                "https://images.unsplash.com/photo-1573164574472-797cdf4a583a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzaWduZXIlMjB3b3JraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+              onPress: fn(),
+            },
+            {
+              title: "Women in Tech",
+              content:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique ex in pretium lobortis. Nam posuere volutpat leo at ullamcorper. Praesent id mattis justo, nec dictum nisl. Ut semper ut nunc vel semper. Etiam pellentesque enim eget lectus sodales eleifend. Etiam a semper justo, non aliquet augue.",
+              imageSource:
+                "https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8ZGVzaWduZXIlMjB3b3JraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+              onPress: fn(),
+            },
+            {
+              title: "Using Chakra UI in Sketch",
+              content:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique ex in pretium lobortis. Nam posuere volutpat leo at ullamcorper. Praesent id mattis justo, nec dictum nisl. Ut semper ut nunc vel semper. Etiam pellentesque enim eget lectus sodales eleifend. Etiam a semper justo, non aliquet augue.",
+              imageSource:
+                "https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+              onPress: fn(),
             },
           ]}
         />
