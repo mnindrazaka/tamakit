@@ -3,3 +3,5 @@ node_modules
 dist
 storybook-static
 types
+tamagui.config.d.ts
+tamagui.config.d.ts.map

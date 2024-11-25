@@ -18,3 +18,16 @@ export const Default: Story = {
     mobileMenuIcon: Menu,
   },
 };
+
+export const WithTitle: Story = {
+  args: {
+    title: "TAMAKIT",
+    links: [
+      { title: "Components", href: "#" },
+      { title: "Pricing", href: "#" },
+      { title: "Marketplace", href: "#" },
+      { title: "Support", href: "#" },
+    ],
+    mobileMenuIcon: Menu,
+  },
+};

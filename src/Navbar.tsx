@@ -1,6 +1,8 @@
 import {
   Button,
   ButtonProps,
+  H1,
+  H3,
   Image,
   Paragraph,
   Popover,
@@ -9,7 +11,8 @@ import {
 } from "tamagui";
 
 export type NavbarProps = {
-  logoImageSource: string;
+  logoImageSource?: string;
+  title?: string;
   links: {
     title: string;
     href: string;
@@ -25,17 +28,19 @@ export const Navbar = (props: NavbarProps) => {
       paddingHorizontal="$8"
       $xs={{ paddingHorizontal: "$5" }}
       elevation="$1"
-      themeInverse
       backgroundColor="$background"
     >
       <YStack>
-        <Image
-          resizeMode="contain"
-          width={160}
-          source={{ uri: props.logoImageSource }}
-          defaultSource={{ uri: props.logoImageSource }}
-          aspectRatio={16 / 9}
-        />
+        {props.logoImageSource && (
+          <Image
+            resizeMode="contain"
+            width={160}
+            source={{ uri: props.logoImageSource }}
+            defaultSource={{ uri: props.logoImageSource }}
+            aspectRatio={16 / 9}
+          />
+        )}
+        {props.title && <H3 marginVertical="$5">{props.title}</H3>}
       </YStack>
       <XStack gap="$5" $md={{ display: "none" }}>
         {props.links.map((link) => (
