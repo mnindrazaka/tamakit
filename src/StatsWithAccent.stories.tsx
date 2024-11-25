@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { StatsWithHighlight } from "./StatsWithHighlight";
+import { StatsWithAccent } from "./StatsWithAccent";
 
-export default { component: StatsWithHighlight } as Meta;
+export default { component: StatsWithAccent } as Meta;
 
-type Story = StoryObj<typeof StatsWithHighlight>;
+type Story = StoryObj<typeof StatsWithAccent>;
 
 export const Default: Story = {
   args: {

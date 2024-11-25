@@ -40,7 +40,7 @@ export const TeamWithInlineHead = (props: TeamWithInlineHeadProps) => {
             <YStack gap="$3">
               <YStack>
                 <H5>{member.name}</H5>
-                <Paragraph color="$blue11">{member.role}</Paragraph>
+                <Paragraph theme="alt1">{member.role}</Paragraph>
               </YStack>
               <XStack gap="$3">
                 {member.socialMediaLinks.map(({ href, icon }) => (

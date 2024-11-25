@@ -1,8 +1,6 @@
 import { config } from "@tamagui/config/v3";
-import { createTamagui, TamaguiInternalConfig } from "@tamagui/core";
+import { createTamagui } from "tamagui";
 
-const appConfig: TamaguiInternalConfig = createTamagui(config);
-
-export type AppConfig = typeof appConfig;
+const appConfig = createTamagui(config);
 
 export default appConfig;

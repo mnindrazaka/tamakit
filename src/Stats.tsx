@@ -25,7 +25,7 @@ export const Stats = (props: StatsProps) => {
         {props.items.map((item, index) => (
           <>
             <YStack alignItems="center">
-              <Paragraph size="$10" color="$blue11" textAlign="center">
+              <Paragraph size="$10" theme="alt1" textAlign="center">
                 {item.title}
               </Paragraph>
               <Paragraph size="$5" textAlign="center">

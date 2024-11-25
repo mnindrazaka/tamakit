@@ -60,7 +60,7 @@ export const Pricing = (props: PricingProps) => {
                 </Paragraph>
               ))}
             </YStack>
-            <Button theme="blue" onPress={item.buyButton.onPress}>
+            <Button theme="active" onPress={item.buyButton.onPress}>
               {item.buyButton.label}
             </Button>
           </YStack>

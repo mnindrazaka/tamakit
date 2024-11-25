@@ -42,7 +42,7 @@ export const Team = (props: TeamProps) => {
             </Avatar>
             <YStack>
               <H5 textAlign="center">{member.name}</H5>
-              <Paragraph color="$blue11" textAlign="center">
+              <Paragraph theme="alt1" textAlign="center">
                 {member.role}
               </Paragraph>
             </YStack>

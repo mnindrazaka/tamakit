@@ -1,5 +1,5 @@
 import React from "react";
-import { TamaguiProvider } from "tamagui";
+import { TamaguiProvider, YStack } from "tamagui";
 import appConfig from "../tamagui.config";
 
 const colors = {
@@ -17,7 +17,7 @@ const preview: import("@storybook/react").Preview = {
 
       return (
         <TamaguiProvider config={appConfig} defaultTheme={theme}>
-          {story()}
+          <YStack theme="purple">{story()}</YStack>
         </TamaguiProvider>
       );
     },

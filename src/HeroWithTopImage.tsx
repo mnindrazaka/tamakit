@@ -37,7 +37,7 @@ export const HeroWithTopImage = (props: HeroWithTopImageProps) => {
           <Paragraph size="$6">{props.subtitle}</Paragraph>
           <XStack gap="$5" $sm={{ flexDirection: "column" }}>
             <Button
-              theme="blue"
+              theme="active"
               size="$5"
               onPress={props.primaryButton.onPress}
             >

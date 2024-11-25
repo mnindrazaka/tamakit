@@ -24,6 +24,9 @@ export const Navbar = (props: NavbarProps) => {
       alignItems="center"
       paddingHorizontal="$8"
       $xs={{ paddingHorizontal: "$5" }}
+      elevation="$1"
+      themeInverse
+      backgroundColor="$background"
     >
       <YStack>
         <Image

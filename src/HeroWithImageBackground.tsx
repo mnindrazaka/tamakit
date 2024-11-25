@@ -24,13 +24,13 @@ export const HeroWithImageBackground = (
       $sm={{ padding: "$5" }}
       $md={{ padding: "$10" }}
       padding="$12"
+      themeInverse
     >
       <YStack
         $sm={{ maxWidth: "100%" }}
         $md={{ maxWidth: 360 }}
         gap="$5"
         maxWidth={480}
-        theme="dark"
       >
         <PageHeader
           title={props.title}
@@ -54,7 +54,7 @@ export const HeroWithImageBackground = (
           left={0}
           right={0}
           position="absolute"
-          backgroundColor="$black1"
+          backgroundColor="$background"
           opacity={0.5}
           zIndex={999}
         ></YStack>

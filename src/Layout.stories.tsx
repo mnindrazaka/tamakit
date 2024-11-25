@@ -7,11 +7,12 @@ import { Footer } from "./Footer";
 import { Hero } from "./Hero";
 import { fn } from "@storybook/test";
 import { Features } from "./Features";
-import { StatsWithHighlight } from "./StatsWithHighlight";
+import { StatsWithAccent } from "./StatsWithAccent";
 import { LogoGrid } from "./LogoGrid";
 import { Team } from "./Team";
 import { Pricing } from "./Pricing";
 import { CallToAction } from "./CallToAction";
+import { Github, Linkedin, Menu } from "@tamagui/lucide-icons";
 
 export default {
   component: Layout,
@@ -44,7 +45,8 @@ export const LandingPage: Story = {
   args: {
     navbar: (
       <Navbar
-        logoImageSource="https://img.logoipsum.com/330.svg"
+        mobileMenuIcon={Menu}
+        logoImageSource="https://img.logoipsum.com/297.svg"
         links={[
           { title: "Components", href: "#" },
           { title: "Pricing", href: "#" },
@@ -76,53 +78,47 @@ export const LandingPage: Story = {
               title: "210+ Components",
               subtitle:
                 "Tamakit components help you develop your project faster.",
-              imageSource:
-                "https://img.icons8.com/?size=100&id=24575&format=png&color=000000",
+              imageSource: "https://i.ibb.co.com/dJGfDBb/image.png",
               onPress: fn(),
             },
             {
               title: "Production Ready",
               subtitle:
                 "Effortlessly create your next production-ready experience with Tamakit components.",
-              imageSource:
-                "https://img.icons8.com/?size=100&id=999&format=png&color=000000",
+              imageSource: "https://i.ibb.co.com/0Z3Fr7Q/image.png",
               onPress: fn(),
             },
             {
               title: "Light & Dark",
               subtitle:
                 "All components support a light and a dark color mode out of the box.",
-              imageSource:
-                "https://img.icons8.com/?size=100&id=26031&format=png&color=000000",
+              imageSource: "https://i.ibb.co.com/QkLB5Rf/image.png",
               onPress: fn(),
             },
             {
               title: "Themeable",
               subtitle:
                 "Your style. Your brand. Customize the components as you need them. It's that simple.",
-              imageSource:
-                "https://img.icons8.com/?size=100&id=4669&format=png&color=000000",
+              imageSource: "https://i.ibb.co.com/fFdP4hG/image.png",
               onPress: fn(),
             },
             {
               title: "Fully Responsive",
               subtitle:
                 "Responsive components that look great on mobile, tablet and desktop.",
-              imageSource:
-                "https://img.icons8.com/?size=100&id=1519&format=png&color=000000",
+              imageSource: "https://i.ibb.co.com/ts45HVh/image.png",
               onPress: fn(),
             },
             {
               title: "Accessible",
               subtitle:
                 "Accessibility first. That's why we pay attention to accessibility right from the start.",
-              imageSource:
-                "https://img.icons8.com/?size=100&id=7276&format=png&color=000000",
+              imageSource: "https://i.ibb.co.com/VxFpRfL/image.png",
               onPress: fn(),
             },
           ]}
         />
-        <StatsWithHighlight
+        <StatsWithAccent
           title="Why Tamakit?"
           subtitle="Because this beautiful and responsive React components will help your to realize your next project in no time."
           items={[
@@ -135,42 +131,35 @@ export const LandingPage: Story = {
           title="These and other companies trust us"
           items={[
             {
-              imageSource:
-                "https://www.horizontal.com/Horizontal_files/Horizontal%20Large.png",
+              imageSource: "https://img.logoipsum.com/252.svg",
               href: "#",
             },
             {
-              imageSource:
-                "https://www.akseleran.co.id/blog/wp-content/uploads/2021/08/Symantec-Logo.png",
+              imageSource: "https://img.logoipsum.com/251.svg",
               href: "#",
             },
             {
-              imageSource:
-                "https://blog.payrollbozz.com/wp-content/uploads/sites/28/2017/05/Tips-membuat-logo-perusahaan-1024x663.jpg",
+              imageSource: "https://img.logoipsum.com/297.svg",
               href: "#",
             },
             {
-              imageSource:
-                "https://download.logo.wine/logo/The_Boring_Company/The_Boring_Company-Logo.wine.png",
+              imageSource: "https://img.logoipsum.com/243.svg",
               href: "#",
             },
             {
-              imageSource:
-                "https://1000logos.net/wp-content/uploads/2021/04/Adobe-logo.png",
+              imageSource: "https://img.logoipsum.com/253.svg",
               href: "#",
             },
             {
-              imageSource:
-                "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/indizone/2020/11/26/yBsNLOj/ford-ternyata-sempat-hampir-ganti-logo-perusahaannya-di-tahun-1966100.jpg",
+              imageSource: "https://img.logoipsum.com/249.svg",
               href: "#",
             },
             {
-              imageSource: "https://bnetfit.id/img/brand/brand-1.png",
+              imageSource: "https://img.logoipsum.com/293.svg",
               href: "#",
             },
             {
-              imageSource:
-                "https://corporate.acehardware.co.id/files/uploads/newsevent/thumbnail/2024/Jun/25/667aa675122e0/480-2-480x340.jpg?token=76d2f7a9195a5cef1605b99482c3501e",
+              imageSource: "https://img.logoipsum.com/296.svg",
               href: "#",
             },
           ]}
@@ -184,66 +173,96 @@ export const LandingPage: Story = {
               role: "Co-Founder / CEO",
               imageSource:
                 "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGxhZHklMjBzbWlsaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-              socialMediaLink: {
-                github: "https://github.com/mnindrazaka",
-                linkedin: "https://www.linkedin.com/in/mnindrazaka",
-                web: "https://mnindrazaka.com/",
-              },
+              socialMediaLinks: [
+                {
+                  href: "https://github.com/mnindrazaka",
+                  icon: <Github size="$1" />,
+                },
+                {
+                  href: "https://linkedin.com/in/mnindrazaka",
+                  icon: <Linkedin size="$1" />,
+                },
+              ],
             },
             {
               name: "Mark Linhsorg",
               role: "Co-Founder / CTO",
               imageSource:
                 "https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Z3V5JTIwc21pbGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-              socialMediaLink: {
-                github: "https://github.com/mnindrazaka",
-                linkedin: "https://www.linkedin.com/in/mnindrazaka",
-                web: "https://mnindrazaka.com/",
-              },
+              socialMediaLinks: [
+                {
+                  href: "https://github.com/mnindrazaka",
+                  icon: <Github size="$1" />,
+                },
+                {
+                  href: "https://linkedin.com/in/mnindrazaka",
+                  icon: <Linkedin size="$1" />,
+                },
+              ],
             },
             {
               name: "Kim Yung",
               role: "Marketing Manager",
               imageSource:
                 "https://images.unsplash.com/photo-1521296797187-726205347ca9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTd8fGxhZHklMjBzbWlsaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-              socialMediaLink: {
-                github: "https://github.com/mnindrazaka",
-                linkedin: "https://www.linkedin.com/in/mnindrazaka",
-                web: "https://mnindrazaka.com/",
-              },
+              socialMediaLinks: [
+                {
+                  href: "https://github.com/mnindrazaka",
+                  icon: <Github size="$1" />,
+                },
+                {
+                  href: "https://linkedin.com/in/mnindrazaka",
+                  icon: <Linkedin size="$1" />,
+                },
+              ],
             },
             {
               name: "Morgan Adebayo",
               role: "Manager, Business Relations",
               imageSource:
                 "https://images.unsplash.com/photo-1524660988542-c440de9c0fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTYwfHxibGFjayUyMGd1eXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-              socialMediaLink: {
-                github: "https://github.com/mnindrazaka",
-                linkedin: "https://www.linkedin.com/in/mnindrazaka",
-                web: "https://mnindrazaka.com/",
-              },
+              socialMediaLinks: [
+                {
+                  href: "https://github.com/mnindrazaka",
+                  icon: <Github size="$1" />,
+                },
+                {
+                  href: "https://linkedin.com/in/mnindrazaka",
+                  icon: <Linkedin size="$1" />,
+                },
+              ],
             },
             {
               name: "Bimbo Akintola",
               role: "Chief Operating Officer",
               imageSource:
                 "https://images.unsplash.com/photo-1522938974444-f12497b69347?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzJ8fGJsYWNrJTIwbGFkeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-              socialMediaLink: {
-                github: "https://github.com/mnindrazaka",
-                linkedin: "https://www.linkedin.com/in/mnindrazaka",
-                web: "https://mnindrazaka.com/",
-              },
+              socialMediaLinks: [
+                {
+                  href: "https://github.com/mnindrazaka",
+                  icon: <Github size="$1" />,
+                },
+                {
+                  href: "https://linkedin.com/in/mnindrazaka",
+                  icon: <Linkedin size="$1" />,
+                },
+              ],
             },
             {
               name: "Yasmine Jones",
               role: "Head of Human Resources",
               imageSource:
                 "https://images.unsplash.com/photo-1574034589502-9f8a1ed46fa7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTMxfHxsYWR5JTIwc21pbGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-              socialMediaLink: {
-                github: "https://github.com/mnindrazaka",
-                linkedin: "https://www.linkedin.com/in/mnindrazaka",
-                web: "https://mnindrazaka.com/",
-              },
+              socialMediaLinks: [
+                {
+                  href: "https://github.com/mnindrazaka",
+                  icon: <Github size="$1" />,
+                },
+                {
+                  href: "https://linkedin.com/in/mnindrazaka",
+                  icon: <Linkedin size="$1" />,
+                },
+              ],
             },
           ]}
         />
@@ -319,12 +338,18 @@ export const LandingPage: Story = {
     footer: (
       <Footer
         copyrightText="© 2024 Tamakit. All rights reserved."
-        logoImageSource="https://img.logoipsum.com/330.svg"
+        logoImageSource="https://img.logoipsum.com/297.svg"
         tagline="Create beautiful websites remarkably fast."
-        socialMediaLink={{
-          github: "https://github.com/mnindrazaka",
-          linkedin: "https://linkedin.com/in/mnindrazaka",
-        }}
+        socialMediaLinks={[
+          {
+            href: "https://github.com/mnindrazaka",
+            icon: <Github />,
+          },
+          {
+            href: "https://linkedin.com/in/mnindrazaka",
+            icon: <Linkedin />,
+          },
+        ]}
         links={[
           {
             title: "Company",

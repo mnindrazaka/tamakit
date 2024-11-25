@@ -42,7 +42,7 @@ export const CallToAction = (props: CallToActionProps) => {
         <Button onPress={props.secondaryButton.onPress} size="$5">
           {props.secondaryButton.label}
         </Button>
-        <Button theme="blue" onPress={props.primaryButton.onPress} size="$5">
+        <Button theme="active" onPress={props.primaryButton.onPress} size="$5">
           {props.primaryButton.label}
         </Button>
       </XStack>

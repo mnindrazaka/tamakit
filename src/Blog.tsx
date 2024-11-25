@@ -46,7 +46,7 @@ export const Blog = (props: BlogProps) => {
             />
             <YStack>
               {item.categoryName && (
-                <Paragraph color="$blue11">{item.categoryName}</Paragraph>
+                <Paragraph theme="alt1">{item.categoryName}</Paragraph>
               )}
               <H4>{item.title}</H4>
               <Paragraph size="$5">{item.content}</Paragraph>

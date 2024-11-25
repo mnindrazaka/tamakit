@@ -27,7 +27,7 @@ export const PageHeader = ({
   return (
     <YStack gap="$5">
       {tag && (
-        <Paragraph color="$blue11" textAlign={textAlign} size="$5">
+        <Paragraph theme="alt1" textAlign={textAlign} size="$5">
           {tag}
         </Paragraph>
       )}
@@ -48,7 +48,7 @@ export const PageHeader = ({
           </Button>
         )}
         {primaryButton && (
-          <Button size="$5" theme="blue" onPress={primaryButton.onPress}>
+          <Button size="$5" theme="active" onPress={primaryButton.onPress}>
             {primaryButton.label}
           </Button>
         )}
