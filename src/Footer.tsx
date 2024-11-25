@@ -1,14 +1,15 @@
-import { Image, Paragraph, XStack, YStack } from "tamagui";
+import { H3, Image, Paragraph, XStack, YStack } from "tamagui";
 
 export type FooterProps = {
-  logoImageSource: string;
-  tagline: string;
+  title?: string;
+  logoImageSource?: string;
+  tagline?: string;
   copyrightText: string;
   socialMediaLinks?: {
     icon: React.ReactNode;
     href: string;
   }[];
-  links: { title: string; subLinks: { title: string; href: string }[] }[];
+  links?: { title: string; subLinks: { title: string; href: string }[] }[];
 };
 
 export const Footer = (props: FooterProps) => {
@@ -17,7 +18,6 @@ export const Footer = (props: FooterProps) => {
       padding="$8"
       $xs={{ padding: "$5" }}
       gap="$8"
-      themeInverse
       backgroundColor="$background"
     >
       <XStack
@@ -26,18 +26,23 @@ export const Footer = (props: FooterProps) => {
         $md={{ flexDirection: "column" }}
       >
         <YStack flex={1}>
-          <Image
-            resizeMode="contain"
-            aspectRatio={16 / 9}
-            width={180}
-            source={{ uri: props.logoImageSource }}
-            defaultSource={{ uri: props.logoImageSource }}
-          />
-          <Paragraph size="$5">{props.tagline}</Paragraph>
+          {props.logoImageSource && (
+            <Image
+              resizeMode="contain"
+              aspectRatio={16 / 9}
+              width={180}
+              source={{ uri: props.logoImageSource }}
+              defaultSource={{ uri: props.logoImageSource }}
+            />
+          )}
+
+          {props.title && <H3>{props.title}</H3>}
+
+          {props.tagline && <Paragraph size="$5">{props.tagline}</Paragraph>}
         </YStack>
 
         <XStack flex={1} gap="$5" flexWrap="wrap">
-          {props.links.map((link) => (
+          {props.links?.map((link) => (
             <YStack
               gap="$3"
               flexBasis="22%"
@@ -64,9 +69,12 @@ export const Footer = (props: FooterProps) => {
         gap="$3"
         $sm={{ flexDirection: "column-reverse", alignItems: "center" }}
       >
-        <Paragraph color="$gray10" $sm={{ textAlign: "center" }}>
-          {props.copyrightText}
-        </Paragraph>
+        {props.copyrightText && (
+          <Paragraph color="$gray10" $sm={{ textAlign: "center" }}>
+            {props.copyrightText}
+          </Paragraph>
+        )}
+
         <XStack gap="$5">
           {props.socialMediaLinks?.map(({ href, icon }) => (
             <a key={href} href={href}>
