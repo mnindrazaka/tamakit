@@ -21,9 +21,9 @@ export const HeroWithImageBackground = (
   return (
     <XStack
       position="relative"
-      $sm={{ padding: "$5" }}
+      $sm={{ padding: "$8" }}
       $md={{ padding: "$10" }}
-      padding="$12"
+      padding="$19"
       themeInverse
     >
       <YStack

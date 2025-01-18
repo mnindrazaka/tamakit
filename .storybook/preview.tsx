@@ -17,7 +17,7 @@ const preview: import("@storybook/react").Preview = {
 
       return (
         <TamaguiProvider config={appConfig} defaultTheme={theme}>
-          <YStack theme="purple">{story()}</YStack>
+          <YStack theme="blue">{story()}</YStack>
         </TamaguiProvider>
       );
     },
