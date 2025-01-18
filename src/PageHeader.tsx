@@ -42,14 +42,14 @@ export const PageHeader = ({
         justifyContent={align === "left" ? "flex-start" : "center"}
         $sm={{ flexDirection: "column" }}
       >
-        {secondaryButton && (
-          <Button size="$5" onPress={secondaryButton.onPress}>
-            {secondaryButton.label}
-          </Button>
-        )}
         {primaryButton && (
           <Button size="$5" theme="active" onPress={primaryButton.onPress}>
             {primaryButton.label}
+          </Button>
+        )}
+        {secondaryButton && (
+          <Button size="$5" onPress={secondaryButton.onPress}>
+            {secondaryButton.label}
           </Button>
         )}
       </XStack>

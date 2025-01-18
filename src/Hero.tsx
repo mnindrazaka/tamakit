@@ -19,7 +19,7 @@ export const Hero = (props: HeroProps) => {
   return (
     <XStack
       $sm={{
-        flexDirection: "column",
+        flexDirection: "column-reverse",
         justifyContent: "center",
         alignItems: "stretch",
         gap: "$5",

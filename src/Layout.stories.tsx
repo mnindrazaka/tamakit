@@ -14,6 +14,7 @@ import { Pricing } from "./Pricing";
 import { CallToAction } from "./CallToAction";
 import { Github, Linkedin, Menu } from "@tamagui/lucide-icons";
 import { Portfolio } from "./Portfolio";
+import { HeroWithAccent } from "./HeroWithAccent";
 
 export default {
   component: Layout,
@@ -159,6 +160,36 @@ export const LandingPage: Story = {
             },
           ]}
         />
+        <YStack marginHorizontal="$-8">
+          <HeroWithAccent
+            title="Create your app remarkable fast"
+            subtitle="Choose from over 180+ beautiful and responsive components and build your app twice as fast."
+            imageSource="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+            primaryButton={{
+              label: "Buy Now",
+              onPress: fn(),
+            }}
+            secondaryButton={{
+              label: "Learn More",
+              onPress: fn(),
+            }}
+          />
+          <HeroWithAccent
+            title="Create your app remarkable fast"
+            subtitle="Choose from over 180+ beautiful and responsive components and build your app twice as fast."
+            imageSource="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+            primaryButton={{
+              label: "Buy Now",
+              onPress: fn(),
+            }}
+            secondaryButton={{
+              label: "Learn More",
+              onPress: fn(),
+            }}
+            headingPosition="right"
+          />
+        </YStack>
+
         <Portfolio
           title="Featured Portfolio"
           subtitle="Ice cream pudding dragée macaroon donut marzipan chocolate"
