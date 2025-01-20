@@ -62,5 +62,8 @@
       "bundle.native": "./src/index.ts",
       "bundle.native.test": "./src/index.ts"
     }
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
   }
 }
