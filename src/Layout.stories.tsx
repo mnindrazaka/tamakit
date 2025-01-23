@@ -4,7 +4,6 @@ import { Layout } from "./Layout";
 import { Paragraph, YStack } from "tamagui";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { Hero } from "./Hero";
 import { fn } from "@storybook/test";
 import { Features } from "./Features";
 import { StatsWithAccent } from "./StatsWithAccent";
@@ -15,6 +14,8 @@ import { CallToAction } from "./CallToAction";
 import { Github, Linkedin, Menu } from "@tamagui/lucide-icons";
 import { Portfolio } from "./Portfolio";
 import { HeroWithAccent } from "./HeroWithAccent";
+import { HeroWithImageBackground } from "./HeroWithImageBackground";
+import { Container } from "./Container";
 
 export default {
   component: Layout,
@@ -58,8 +59,8 @@ export const LandingPage: Story = {
       />
     ),
     main: (
-      <YStack gap="$10" paddingVertical="$8">
-        <Hero
+      <YStack gap="$10">
+        <HeroWithImageBackground
           title="Create your app remarkable fast"
           subtitle="Choose from over 180+ beautiful and responsive components and build your app twice as fast."
           imageSource="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
@@ -72,95 +73,98 @@ export const LandingPage: Story = {
             onPress: fn(),
           }}
         />
-        <Features
-          title="What can you expect?"
-          subtitle="A bundle of 210+ ready-to-use, responsive and accessible components with clever structured sourcode files."
-          items={[
-            {
-              title: "210+ Components",
-              subtitle:
-                "Tamakit components help you develop your project faster.",
-              imageSource: "https://i.ibb.co.com/dJGfDBb/image.png",
-            },
-            {
-              title: "Production Ready",
-              subtitle:
-                "Effortlessly create your next production-ready experience with Tamakit components.",
-              imageSource: "https://i.ibb.co.com/0Z3Fr7Q/image.png",
-            },
-            {
-              title: "Light & Dark",
-              subtitle:
-                "All components support a light and a dark color mode out of the box.",
-              imageSource: "https://i.ibb.co.com/QkLB5Rf/image.png",
-            },
-            {
-              title: "Themeable",
-              subtitle:
-                "Your style. Your brand. Customize the components as you need them. It's that simple.",
-              imageSource: "https://i.ibb.co.com/fFdP4hG/image.png",
-            },
-            {
-              title: "Fully Responsive",
-              subtitle:
-                "Responsive components that look great on mobile, tablet and desktop.",
-              imageSource: "https://i.ibb.co.com/ts45HVh/image.png",
-            },
-            {
-              title: "Accessible",
-              subtitle:
-                "Accessibility first. That's why we pay attention to accessibility right from the start.",
-              imageSource: "https://i.ibb.co.com/VxFpRfL/image.png",
-            },
-          ]}
-        />
-        <StatsWithAccent
-          title="Why Tamakit?"
-          subtitle="Because this beautiful and responsive React components will help your to realize your next project in no time."
-          items={[
-            { title: "210+", subtitle: "Components" },
-            { title: "60%", subtitle: "Less development costs" },
-            { title: "25k", subtitle: "GitHub stars" },
-          ]}
-        />
-        <LogoGrid
-          title="These and other companies trust us"
-          items={[
-            {
-              imageSource: "https://img.logoipsum.com/252.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/251.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/297.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/243.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/253.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/249.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/293.svg",
-              href: "#",
-            },
-            {
-              imageSource: "https://img.logoipsum.com/296.svg",
-              href: "#",
-            },
-          ]}
-        />
-        <YStack marginHorizontal="$-8">
+        <Container>
+          <Features
+            title="What can you expect?"
+            subtitle="A bundle of 210+ ready-to-use, responsive and accessible components with clever structured sourcode files."
+            items={[
+              {
+                title: "210+ Components",
+                subtitle:
+                  "Tamakit components help you develop your project faster.",
+                imageSource: "https://i.ibb.co.com/dJGfDBb/image.png",
+              },
+              {
+                title: "Production Ready",
+                subtitle:
+                  "Effortlessly create your next production-ready experience with Tamakit components.",
+                imageSource: "https://i.ibb.co.com/0Z3Fr7Q/image.png",
+              },
+              {
+                title: "Light & Dark",
+                subtitle:
+                  "All components support a light and a dark color mode out of the box.",
+                imageSource: "https://i.ibb.co.com/QkLB5Rf/image.png",
+              },
+              {
+                title: "Themeable",
+                subtitle:
+                  "Your style. Your brand. Customize the components as you need them. It's that simple.",
+                imageSource: "https://i.ibb.co.com/fFdP4hG/image.png",
+              },
+              {
+                title: "Fully Responsive",
+                subtitle:
+                  "Responsive components that look great on mobile, tablet and desktop.",
+                imageSource: "https://i.ibb.co.com/ts45HVh/image.png",
+              },
+              {
+                title: "Accessible",
+                subtitle:
+                  "Accessibility first. That's why we pay attention to accessibility right from the start.",
+                imageSource: "https://i.ibb.co.com/VxFpRfL/image.png",
+              },
+            ]}
+          />
+          <StatsWithAccent
+            title="Why Tamakit?"
+            subtitle="Because this beautiful and responsive React components will help your to realize your next project in no time."
+            items={[
+              { title: "210+", subtitle: "Components" },
+              { title: "60%", subtitle: "Less development costs" },
+              { title: "25k", subtitle: "GitHub stars" },
+            ]}
+          />
+          <LogoGrid
+            title="These and other companies trust us"
+            items={[
+              {
+                imageSource: "https://img.logoipsum.com/252.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/251.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/297.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/243.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/253.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/249.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/293.svg",
+                href: "#",
+              },
+              {
+                imageSource: "https://img.logoipsum.com/296.svg",
+                href: "#",
+              },
+            ]}
+          />
+        </Container>
+
+        <YStack>
           <HeroWithAccent
             title="Create your app remarkable fast"
             subtitle="Choose from over 180+ beautiful and responsive components and build your app twice as fast."

@@ -1,6 +1,7 @@
 export { Blog } from "./Blog";
 export { CallToAction } from "./CallToAction";
 export { CallToActionCentered } from "./CallToActionCentered";
+export { Container } from "./Container";
 export { Features } from "./Features";
 export { Footer } from "./Footer";
 export { Hero } from "./Hero";
