@@ -1,4 +1,4 @@
-import { Image, Theme, XStack, YStack } from "tamagui";
+import { Image, Theme, useThemeName, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type HeroWithImageBackgroundProps = {
@@ -18,8 +18,10 @@ export type HeroWithImageBackgroundProps = {
 export const HeroWithImageBackground = (
   props: HeroWithImageBackgroundProps
 ) => {
+  const themeName = useThemeName();
+  const isLightTheme = !themeName.includes("dark");
   return (
-    <Theme name="dark">
+    <Theme inverse={isLightTheme}>
       <XStack
         position="relative"
         $sm={{ padding: "$8" }}
