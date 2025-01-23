@@ -30,37 +30,31 @@ export const HeroWithAccent = (props: HeroWithAccentProps) => {
       flexDirection={flexDirection}
     >
       <YStack
-        themeInverse
-        $sm={{
-          maxWidth: "100%",
-          padding: "$8",
-        }}
-        $md={{ maxWidth: 480 }}
-        gap="$5"
+        flex={1}
+        flexBasis={0}
         justifyContent="center"
         backgroundColor="$background"
-        paddingHorizontal="$10"
-        paddingVertical="$15"
-        flex={1}
+        $sm={{ flexBasis: "auto" }}
       >
-        <YStack maxWidth={500}>
-          <PageHeader
-            title={props.title}
-            subtitle={props.subtitle}
-            primaryButton={props.primaryButton}
-            secondaryButton={props.secondaryButton}
-          />
-        </YStack>
-      </YStack>
-      <YStack flex={1}>
-        <Image
-          width="100%"
-          height="100%"
-          aspectRatio={4 / 3}
-          defaultSource={{ uri: props.imageSource }}
-          source={{ uri: props.imageSource }}
+        <PageHeader
+          title={props.title}
+          subtitle={props.subtitle}
+          primaryButton={props.primaryButton}
+          secondaryButton={props.secondaryButton}
+          padding="$8"
         />
       </YStack>
+
+      <Image
+        width="100%"
+        // height="100%"
+        aspectRatio={4 / 3}
+        defaultSource={{ uri: props.imageSource }}
+        source={{ uri: props.imageSource }}
+        flex={1}
+        flexBasis={0}
+        $sm={{ flexBasis: "auto" }}
+      />
     </XStack>
   );
 };

@@ -1,4 +1,4 @@
-import { Button, H1, Paragraph, XStack, YStack } from "tamagui";
+import { Button, H1, Paragraph, XStack, YStack, YStackProps } from "tamagui";
 
 export type PageHeaderProps = {
   title: string;
@@ -13,7 +13,7 @@ export type PageHeaderProps = {
     label: string;
     onPress: () => void;
   };
-};
+} & YStackProps;
 
 export const PageHeader = ({
   title,
@@ -22,10 +22,11 @@ export const PageHeader = ({
   tag,
   primaryButton,
   secondaryButton,
+  ...ystackProps
 }: PageHeaderProps) => {
   const textAlign = align === "left" ? "left" : "center";
   return (
-    <YStack gap="$5">
+    <YStack gap="$5" {...ystackProps}>
       {tag && (
         <Paragraph theme="alt1" textAlign={textAlign} size="$5">
           {tag}

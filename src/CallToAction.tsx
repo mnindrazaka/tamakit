@@ -28,6 +28,7 @@ export const CallToAction = (props: CallToActionProps) => {
         alignItems: "flex-start",
       }}
       flexWrap="wrap"
+      backgroundColor="$backgroundPress"
     >
       <YStack maxWidth={640} flexShrink={0}>
         <PageHeader title={props.title} subtitle={props.subtitle} />
