@@ -2,6 +2,7 @@ import { Image, Theme, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type HeroWithAccentProps = {
+  tag?: string;
   title: string;
   subtitle: string;
   primaryButton?: {
@@ -37,6 +38,7 @@ export const HeroWithAccent = (props: HeroWithAccentProps) => {
         $sm={{ flexBasis: "auto" }}
       >
         <PageHeader
+          tag={props.tag}
           title={props.title}
           subtitle={props.subtitle}
           primaryButton={props.primaryButton}
@@ -47,7 +49,6 @@ export const HeroWithAccent = (props: HeroWithAccentProps) => {
 
       <Image
         width="100%"
-        // height="100%"
         aspectRatio={4 / 3}
         defaultSource={{ uri: props.imageSource }}
         source={{ uri: props.imageSource }}

@@ -20,6 +20,7 @@ export const Default: Story = {
       label: "Learn More",
       onPress: fn(),
     },
+    tag: "Tamakit",
     title: "CREATE YOUR APP REMARKABLE FAST",
     subtitle:
       "Choose from over 180+ beautiful and responsive components and build your app twice as fast.",

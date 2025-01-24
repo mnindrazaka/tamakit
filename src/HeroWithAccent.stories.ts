@@ -26,6 +26,7 @@ export const Default: Story = {
 
 export const HeadingInTheRight: Story = {
   args: {
+    tag: "Tamakit",
     title: "Create your app remarkable fast",
     subtitle:
       "Choose from over 180+ beautiful and responsive components and build your app twice as fast.",

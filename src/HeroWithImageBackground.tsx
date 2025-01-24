@@ -2,6 +2,7 @@ import { Image, Theme, useThemeName, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type HeroWithImageBackgroundProps = {
+  tag?: string;
   title: string;
   subtitle: string;
   primaryButton?: {
@@ -35,6 +36,7 @@ export const HeroWithImageBackground = (
           maxWidth={480}
         >
           <PageHeader
+            tag={props.tag}
             title={props.title}
             subtitle={props.subtitle}
             primaryButton={props.primaryButton}
