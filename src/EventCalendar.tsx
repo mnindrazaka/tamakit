@@ -47,6 +47,7 @@ export const EventCalendar = (props: EventCalendarProps) => {
               elevation={5}
               borderRadius="$5"
               overflow="hidden"
+              backgroundColor="$background"
             >
               <Image aspectRatio={16 / 9} source={{ uri: event.imageSource }} />
               <XStack
