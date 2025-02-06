@@ -37,9 +37,8 @@ export const ImageGallery = (props: ImageGalleryProps) => {
               .map((imageSource) => (
                 <Image
                   aspectRatio={4 / 3}
-                  source={{
-                    uri: imageSource,
-                  }}
+                  source={{ uri: imageSource }}
+                  defaultSource={{ uri: imageSource }}
                   flex={Math.floor(Math.random() * 9) % 2 === 0 ? 1.5 : 2}
                 />
               ))}

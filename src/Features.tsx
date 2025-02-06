@@ -1,7 +1,17 @@
-import { H4, Image, Paragraph, XStack, YStack } from "tamagui";
+import { H3, Image, Paragraph, XStack, YStack } from "tamagui";
 import { PageHeader } from "./PageHeader";
 
 export type FeaturesProps = {
+  align?: "left" | "center";
+  tag?: string;
+  primaryButton?: {
+    label: string;
+    onPress: () => void;
+  };
+  secondaryButton?: {
+    label: string;
+    onPress: () => void;
+  };
   title: string;
   subtitle: string;
   items: {
@@ -15,7 +25,14 @@ export const Features = (props: FeaturesProps) => {
   return (
     <YStack gap="$8">
       <YStack maxWidth={640}>
-        <PageHeader title={props.title} subtitle={props.subtitle} />
+        <PageHeader
+          title={props.title}
+          subtitle={props.subtitle}
+          tag={props.tag}
+          primaryButton={props.primaryButton}
+          secondaryButton={props.secondaryButton}
+          align={props.align}
+        />
       </YStack>
 
       <XStack gap="$8" flexWrap="wrap">
@@ -40,8 +57,8 @@ export const Features = (props: FeaturesProps) => {
                 source={{ uri: item.imageSource }}
               />
               <YStack>
-                <H4>{item.title}</H4>
-                <Paragraph>{item.subtitle}</Paragraph>
+                <H3>{item.title}</H3>
+                <Paragraph size="$5">{item.subtitle}</Paragraph>
               </YStack>
             </YStack>
           </YStack>

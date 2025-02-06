@@ -28,6 +28,7 @@ export const Default: Story = {
         datetime: "2025-02-06T12:00:00Z",
         imageSource:
           "https://img.freepik.com/premium-photo/creative-business-people-discussion_13339-72977.jpg",
+        href: "https://www.google.com",
       },
       {
         title: "Meetup Web - HTML & CSS",

@@ -7,6 +7,7 @@ export type EventCalendarProps = {
     imageSource: string;
     datetime: string;
     title: string;
+    href?: string;
   }[];
   title: string;
   subtitle: string;
@@ -48,8 +49,14 @@ export const EventCalendar = (props: EventCalendarProps) => {
               borderRadius="$5"
               overflow="hidden"
               backgroundColor="$background"
+              onPress={() => event.href && window.open(event.href)}
+              cursor={event.href ? "pointer" : "default"}
             >
-              <Image aspectRatio={16 / 9} source={{ uri: event.imageSource }} />
+              <Image
+                aspectRatio={16 / 9}
+                source={{ uri: event.imageSource }}
+                defaultSource={{ uri: event.imageSource }}
+              />
               <XStack
                 gap="$3"
                 alignItems="center"
