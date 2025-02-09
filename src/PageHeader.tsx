@@ -28,7 +28,7 @@ export const PageHeader = ({
   return (
     <YStack gap="$5" {...ystackProps}>
       {tag && (
-        <Paragraph theme="alt1" textAlign={textAlign} size="$5">
+        <Paragraph theme="alt1" textAlign={textAlign} size="$6">
           {tag}
         </Paragraph>
       )}

@@ -1,7 +1,6 @@
 import {
   Button,
   ButtonProps,
-  H1,
   H3,
   Image,
   Paragraph,
